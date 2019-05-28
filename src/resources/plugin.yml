@@ -1,0 +1,11 @@
+name: ImyvmDiscord
+version: 0.1
+main: com.imyvm.spigot.ImyvmDiscord.ImyvmDiscord
+api-version: 1.13
+
+commands:
+  imyvmdiscord:
+    description: /imyvmdiscord reload
+permissions:
+  imyvmdiscord.reload:
+    default: op
