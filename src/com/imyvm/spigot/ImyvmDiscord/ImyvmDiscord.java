@@ -1,6 +1,5 @@
 package com.imyvm.spigot.ImyvmDiscord;
 
-import com.google.common.base.Charsets;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -9,7 +8,6 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -40,6 +38,9 @@ public class ImyvmDiscord extends JavaPlugin implements CommandExecutor{
                 "https://discordapp.com/api/webhooks/xxxxxxxxxxxxx/" +
                         "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         config.addDefault("OpOverride", true);
+        config.addDefault("enbaleProxy", false);
+        config.addDefault("PROXY_ADDRESS", "localhost");
+        config.addDefault("PORT", 7890);
         boldCommands.add("/tp");
         ignoreCommands.add("/msg");
         config.addDefault("BoldCommands",boldCommands);
